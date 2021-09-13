@@ -1,23 +1,22 @@
-export default function Modal(){
+export default function Modal() {
 
-  const modalWrapper = document.querySelector('.modal-wrapper')
+    const modalWrapper = document.querySelector('.modal-wrapper')
+    const cancelButton = document.querySelector('.button.cancel')
 
-  const cancelBtn = document.querySelector('.button.cancel')
+    cancelButton.addEventListener("click", close)
 
-  cancelBtn.addEventListener('click', close)
+    function open() {
+        //funcionalidade de atribuir a classe active para a modal
+        modalWrapper.classList.add("active")
+    }
 
-  function open(){
-    // atribuir a classe 'active' para a modal
-    modalWrapper.classList.add('active')
-  }
-  function close(){
-    // atribuir a classe 'active' para a modal
-    modalWrapper.classList.remove('active')
-  }
+    function close() {
+        //funcionalidade de remover a classe active da modal
+        modalWrapper.classList.remove("active")
+    }
 
-  return{
-    open, 
-    close
-  }
+    return {
+        open,
+        close
+    }
 }
-

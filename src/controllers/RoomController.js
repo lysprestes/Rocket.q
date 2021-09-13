@@ -8,7 +8,7 @@ module.exports = {
         let isRoom = true
         while (isRoom) {
             /* Gera o numero da sala */
-            for (var i = 0; i < 6; i++) {
+            for (let i = 0; i < 6; i++) {
                 i == 0 ? roomId = Math.floor(Math.random() * 10).toString() :
                     roomId += Math.floor(Math.random() * 10).toString()
             }

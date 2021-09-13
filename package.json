@@ -1,0 +1,27 @@
+{
+  "name": "Rocket.q",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para gerenciar perguntas anônimas de usuários direcionadas ao dono da página. Este projeto foi desenvolvido com base no projeto da semana NLW Rocketseat na missão discover",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lysprestes/Rocket.q.git"
+  },
+  "keywords": [],
+  "author": "Lys Prestes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lysprestes/Rocket.q/issues"
+  },
+  "homepage": "https://github.com/lysprestes/Rocket.q#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
